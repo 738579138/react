@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  // font-size: 0.16rem;
+  color: #333;
+  -webkit-tap-highlight-color: transparent;
+}
+body,html {
+  width: 100vw;
+  height: 100vh;
+}
+html {
+  font-size: calc(~"266.67% + 57.3333 * (100vw - 320px) / 430");
+}
+a {
+  text-decoration: none;
+}
+ul{
+  li {
+    list-style: none;
+  }
+}
+.clear:after {
+  content: "020";
+  display: block;
+  clear:both;
+  height: 0;
+  visibility: hidden; 
+}
+.clear{
+  zoom:1;
+}
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  background: #fff;
+}

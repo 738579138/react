@@ -1,0 +1,37 @@
+{
+    "homehead": "./src/images/01.jpg",
+    "proImg": [
+        {
+            "img": "./src/images/jiulong.png",
+            "name": "九龙湾中心"
+        },
+        {
+            "img": "./src/images/jiulong.png",
+            "name": "280米地标"
+        },
+        {
+            "img": "./src/images/jiulong.png",
+            "name": "五星级酒店"
+        },
+        {
+            "img": "./src/images/jiulong.png",
+            "name": "湾景豪宅 "
+        },
+        {
+            "img": "./src/images/jiulong.png",
+            "name": "商业街区"
+        },
+        {
+            "img": "./src/images/jiulong.png",
+            "name": "醇熟配套"
+        },
+        {
+            "img": "./src/images/jiulong.png",
+            "name": "精英团队"
+        },
+        {
+            "img": "./src/images/jiulong.png",
+            "name": "联系我们"
+        }
+    ]
+}
