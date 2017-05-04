@@ -5,7 +5,7 @@ var webpack = require('webpack'),
       entry: './src/App.js',
       output: {
         path:path.resolve(__dirname,'bulid'),
-        publicPath: 'http://192.168.2.137:5000/',
+        publicPath: 'http://localhost:5000/',
         filename:'build.[hash].js'
       },
       module:{
@@ -49,7 +49,8 @@ var webpack = require('webpack'),
       },
       plugins:[
         new HtmlWebpackPlugin({
-          template: './index.html'
+          template: './index.html',
+          filename: 'index.html'
         }),
         new webpack.HotModuleReplacementPlugin()
       ],

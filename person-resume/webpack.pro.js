@@ -1,7 +1,8 @@
 var webpack = require('webpack'),
     path  = require('path'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
-    ExtractTextPlugin = require('extract-text-webpack-plugin');
+    ExtractTextPlugin = require('extract-text-webpack-plugin'),
+    CleanWebpackPlugin = require('clean-webpack-plugin'); // 删除文件
 module.exports = {
   entry:'./src/app.js',
   output:{
@@ -44,8 +45,15 @@ module.exports = {
     ]
   },
   plugins:[
+        new CleanWebpackPlugin(['build'], {
+            root: path.resolve(__dirname),
+            verbose: true,
+            dry: false,
+            //exclude: ["dist/1.chunk.js"]
+        }),
     new HtmlWebpackPlugin({
-      template:'./index.html'
+      template:'./index.html',
+      filename:'index.html'
     }),
     new ExtractTextPlugin('style.[hash].css')
   ]
